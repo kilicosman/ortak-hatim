@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Paneli - Ortak Hatim</title>
+  <link rel="stylesheet" href="admin.css" />
+  <script defer src="lang.js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 data-i18n="login_title">Admin Paneli</h1>
+
+    <div id="login-section">
+      <h2 data-i18n="login">Giriş</h2>
+      <input type="email" id="admin-email" placeholder="admin@email.com" />
+      <input type="password" id="admin-password" placeholder="Şifre" data-i18n="admin_pass" />
+      <button id="login-button" data-i18n="login">Giriş Yap</button>
+      <p id="login-error" class="error"></p>
+    </div>
+
+    <div id="panel-section" class="hidden">
+      <h2 data-i18n="pending_groups">Bekleyen Hatim Grupları</h2>
+      <div id="pending-groups"></div>
+
+      <h2 data-i18n="new_admin">Yeni Admin Ekle</h2>
+      <input type="email" id="new-admin-email" placeholder="admin@email.com" data-i18n="admin_email" />
+      <input type="password" id="new-admin-password" placeholder="Şifre" data-i18n="admin_pass" />
+      <button id="add-admin-button" data-i18n="admin_add">Admin Ekle</button>
+      <p id="admin-add-msg"></p>
+    </div>
+  </div>
+</body>
+</html>

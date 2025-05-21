@@ -1,0 +1,13 @@
+.env
+.env.local
+.supabase
+node_modules/
+dist/
+.vercel
+.DS_Store
+*.log
+*.bak
+*.tmp
+*.swp
+*.zip
+.vscode/

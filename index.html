@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ortak Hatim</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="lang.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: right; font-size: 0.9em;">
+      <a href="admin.html" style="text-decoration: none; color: gray;">Admin Giriş</a>
+    </div>
+    <h1 data-i18n="login_title">Ortak Hatim Giriş</h1>
+    <div id="login-section">
+      <label for="password" data-i18n="password_label">Hatim Şifresi:</label>
+      <input type="password" id="password" placeholder="Örn: vefa" />
+      <button id="login-button" data-i18n="login_button">Hatimine Git</button>
+      <p id="login-error" class="error"></p>
+    </div>
+  </div>
+</body>
+</html>
